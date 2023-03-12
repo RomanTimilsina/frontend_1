@@ -3,15 +3,18 @@ import { useLocation, useNavigate } from 'react-router-dom'
 import axios from 'axios'
 
 const Update = () => {
-
+  
   const [book, setBooks] = useState({
     title:"",
     desc:"",
     cover:"",
   })
 
-  const navigate = useNavigate()
+  
+  
   const location = useLocation()
+ 
+  const navigate = useNavigate()
 
   const bookId = location.pathname.split('/')[2]
   console.log(bookId)
@@ -25,8 +28,8 @@ const Update = () => {
   const handleClick = async (e) => {
     e.preventDefault()
     try {
-      await axios.put('http://localhost:8800/books/'+bookId,book)
-      navigate('/books',{replace:'true'})
+      await axios.put("http://localhost:8800/books/"+bookId,book);
+      navigate("/books");
     } catch (err) {
       console.log(err)
     }
