@@ -6,6 +6,7 @@ import './App.css';
 import Add from "./component/Add";
 import Book from "./component/Book";
 import Update from "./component/Update";
+import './style.css'
 
 function App() {
 

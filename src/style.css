@@ -1,0 +1,56 @@
+.books{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  height: 100vh;
+}
+
+.book_container{
+  display: flex;
+  gap: 25px;
+}
+
+.cover{
+  height: 200px;
+  width: 200px;
+  background: grey;
+}
+
+.book{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 200px;
+}
+
+p,h2{
+  width: 200px;
+}
+
+h2{
+height: 20px;
+}
+
+p{
+  height: 50px;
+}
+
+.add{
+background: blue;
+border: none;
+padding: 10px;
+border-radius: 10px;
+}
+
+.link{
+  text-decoration: none;
+  color: white;
+}
+
+.input{
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid red;
+}
