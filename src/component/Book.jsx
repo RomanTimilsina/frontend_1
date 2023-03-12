@@ -33,6 +33,8 @@ const Book = () => {
             <div className='cover'></div>
             <h2>{book.title}</h2>
             <p>{book.desc}</p>
+            <button className='delete'>delete</button>
+            <button className='update'><Link to={`/update/${book.id}`}>Update</Link></button>
             </div>
         })
       }

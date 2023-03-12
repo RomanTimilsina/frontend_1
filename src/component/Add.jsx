@@ -9,6 +9,7 @@ const Add = () => {
     desc:"",
     cover:""
   })
+  console.log(books)
 
   const navigate = useNavigate()
 
